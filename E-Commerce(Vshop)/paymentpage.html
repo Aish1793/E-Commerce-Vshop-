@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products-Vshop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!------------------------------payment-page-------------------------------->
+    <header>
+      <div class="container-c">
+        <div class="col-1">
+          <h3>Billing Address</h3>
+          <form>
+            Full Name:
+            <input type="text " name="" placeholder="Enter name" />
+            Email:
+            <input type="text " name="" placeholder="Enter email" />
+            Address:
+            <input type="text " name="" placeholder="Enter address" />
+            City:
+            <input type="text " name="" placeholder="Enter city" />
+            <div id="zip">
+              <label>
+                State:<br />
+                <select>
+                  <option>Choose state...</option>
+                  <option>Rajasthan</option>
+                  <option>Hariyana</option>
+                  <option>Uttar Pradesh</option>
+                  <option>Madhya Pradesh</option>
+                </select> </label
+              ><br />
+              <label for="">
+                Zip code: <input type="number" name="" placeholder="zip code"
+              /></label>
+            </div>
+          </form>
+          <div class="col-2">
+        </div>
+        <div class="col-2">
+          <h3>Payment</h3>
+          <form>
+            Accepted card:
+            <img src="credit card.jpeg" width="100px" />
+            <img src="visa image.jpeg" width="80px"/>
+            <h5>PAY THROUGH :</h5>
+            --------------------------------
+          </form>
+        </div>
+        <a href="donepage.html" class="btn">place order</a>
+      </div>
+    </header>
+
+    <!---js for toggle menu----->
+    <script>
+      var menuItems = document.getElementById("menuItems");
+      menuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (menuItems.style.maxHeight == "0px") {
+          menuItems.style.maxHeight = "200px";
+        } else {
+          menuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!--------------------js for toggle form--------------------->
+    <script>
+      var loginform = document.getElementById("loginform");
+      var regform = document.getElementById("regform");
+      var indicator = document.getElementById("indicator");
+      function Register() {
+        regform.style.transform = "translateX(0px)";
+        loginform.style.transform = "translateX(0px)";
+        indicator.style.transform = "translateX(100px)";
+      }
+      function loginform() {
+        regform.style.transform = "translateX(300px)";
+        loginform.style.transform = "translateX(300px)";
+        indicator.style.transform = "translateX(0px)";
+      }
+    </script>
+  </body>
+</html>
